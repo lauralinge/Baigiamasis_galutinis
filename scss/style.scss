@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+// Shadow
+$box-shadow: 0 10px 10px #00000029;
+// Color
+$blue: #6696e2;
+$grey: #86878b;
+$darkGrey: #333333;
+$blackGrey: #212121;
+$lightGrey: #d8d8d8;
+$peach: #e27866;
+$otherPeach: #a37169;
+$white: #ffffff;
+$black: #000000;
+$granite: #1c1c1c;
+$green: #41d395;
+
+@mixin w-h {
+  width: 100%;
+  height: auto; 
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-center1 {
+  display: flex;
+  align-items: center;
+}
+@mixin flex-center2 {
+  display: flex;
+  justify-content: center;
+}
+@mixin flex-spaceBetween-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: white;  
+}
+
+// FIRST SECTION-NAVIGACIJA
+
+nav {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 72px;
+  top: 0;
+  background: $granite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;  
+  padding: 10px 150px;
+  font-size: 16px;
+  box-shadow: $box-shadow;
+  z-index: 1;
+
+  img {
+    min-width: 105px;
+    margin-right: 50px;
+  }
+
+  a {
+    position: relative;
+    color: grey;
+    transition: 0.3s;
+    transition-delay: 0.1s;
+    &:hover {
+      color: $white;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -27px;
+      width: 100%;
+      height: 0;
+      background: $peach;
+      transition: 0.3s;
+      opacity: 1;
+    }
+    &:hover::before {
+      height: 15%;
+    }
+  }
+
+  .menu {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+
+#section-2 {
+  background-image: url(../images/photo-1480714378408-67cf0d13bc1b.png);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  padding: 118px;
+
+  &::before {
+    content: "";
+    background: transparent linear-gradient(270deg,#1c1c1c);
+    opacity: 0.63;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .box-2 {
+    position: relative;
+    img {
+      width: 250px;
+      height: 110px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 36px;
+      line-height: 40px;
+      width: 70%;
+      font-weight: 600;
+    }
+    .text {
+      border: 1px solid $white;
+      width: 85px;
+      background: $white;
+      margin: 30px 0;
+    }
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      color: $white;
+      opacity: 0.8;
+      font-weight: 500;
+    }
+
+    button {
+      width: 135px;
+      height: 42px;
+      margin-top: 40px;
+      background: transparent;
+      border: 2px solid $white;
+      color: $white;
+      transition: 0.3s;
+      &:hover {
+        color: $peach;
+        border: 3px solid $peach;
+        cursor: pointer;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    background-color: $white;
+    max-width: 360px;
+    width: 100%;
+    @include flex-center1;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-left: 100px;
+    color: $granite;
+
+    h3 {
+      text-align: center;
+      width: 100%;
+      padding: 20px 0;
+      font-size: 20px;
+      background: $white;
+      color: $darkGrey;
+      border-radius: 5px 5px 0 0;
+
+      span {
+        color: $peach;
+      }
+    }
+    p {
+      width: 100%;
+      text-align: left;
+      padding-bottom: 20px;
+      margin-top: 30px;
+      font-weight: 700;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+      max-width: 360px;
+      padding: 0 50px;
+      @include w-h;
+
+      input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid $grey;
+        padding-bottom: 5px;
+        margin-top: 30px;
+        font-size: 15px;
+        &::-webkit-input-placeholder {
+          padding-left: 10px;
+          color: $lightGrey;
+        }
+      }
+
+      .radio-button1 {
+        display: flex;
+        gap: 70px;
+
+        .form-radio-button1 {
+          display: flex;
+          width: 15px;
+          height: 15px;
+          border: 1px solid $green;
+          border-radius: 100%;
+          position: relative;
+          transition: 0.5s;
+
+          label {
+            display: flex;
+            color: $black;
+            opacity: 1;
+            font-size: 10px;
+            font-weight: 600;
+            margin-left: 5px;
+            transition: color 0.5s;
+
+            input::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              transform: scale(0);
+              background: $green;
+              border-radius: 100%;
+              transition: 0.5s;
+            }
+            input:checked:before {
+              transform: scale(0.6);
+            }
+           
+          }
+        }
+      }
+    }
+    .form-submit1 {
+      width: 100%;
+      padding: 15px;
+      font-size: 20px;
+      border: 1px solid transparent;
+      background-image: none;
+      background-color: $green;
+      color: $white;
+      border-radius: 0 0 5px 5px;
+      margin-top: 40px;
+      transition: 0.3s;
+    }
+    .form-submit1:hover {
+      cursor: pointer;
+      background-color: $peach;
+    }
+  }
+}
+
+// SOCIAL MEDIA
+#social-media {
+  @include flex-spaceBetween-center;
+  background: $white;
+  width: 100%;
+  @include w-h;
+  padding: 0 150px;
+
+  .media-text {
+    width: 40%;
+    p {
+      color: $grey;
+      line-height: 20px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: $darkGrey;
+      margin: 20px 0 5px 0;
+    }
+  }
+}
+  
+
+// TABS
+
+#tabs {
+  position: relative;
+  @include flex-center1;
+  background-image: url(../images/christoffer-engstrom-503481-unsplash.png);
+  background-position: center;
+  background-size: cover;
+  padding: 120px 150px;
+  @include w-h;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: transparent linear-gradient(270deg,#6696e2, #e27866);
+    opacity: 0.42;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  
+  }
+  .tabs {
+    position: relative;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+    @include flex-center2;
+  }
+
+  .tabs .tab-left > div {
+    position: relative;
+    background: $otherPeach;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+    box-shadow: $box-shadow;
+    border-radius: 3px;
+    cursor: pointer;
+    @include flex-center;
+    font-size: 15px;
+  }
+  .tableft1 p {
+    rotate: -45deg;
+    color: $white;
+    opacity: 0.5;
+  }
+
+  .tableft1:before {
+    background: $peach;
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .tableft1:hover::before {
+    width: 100%;
+  }
+
+  .tableft1.active:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .tableft1.active:hover::before {
+    width: 100%;
+  }
+
+  .tableft1.active p,
+  .tableft1.active:hover p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $white;
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+
+  .tabs .tab-middle {
+    flex-basis: 100%;
+    position: relative;
+    .tab {
+      display: flex;
+    }
+    & > div {
+      position: absolute;
+      top: 50vh;
+      left: 100px;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+        top 0ms ease-in-out 3000ms;
+      &.active {
+        top: 20px;
+        left: 50px;
+        text-align: left;
+        opacity: 1;
+        transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+          top 0ms ease-in-out 0ms;
+      }
+      h3 {
+        max-width: 510px;
+        font-size: 25px;
+        line-height: 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      p {
+        max-width: 1400px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  } 
+}
+
