@@ -11,6 +11,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
   <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
+
+  <!-- Swiper css cdn --> -->
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+
   <link rel="stylesheet" href="app/css/style.css">
 </head>
 <body>
@@ -18,12 +26,15 @@
   <nav>
     <img id="logo" src="app/images/cheshire-county-hygiene-services.svg" alt="logo-1"/>
     <div class="menu">
-      <a href="#">Features</a>
-      <a href="#">About</a>
-      <a href="#">Pricing</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+      <a class="selected" href="#section-2">Features</a>
+      <a href="#black">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contacts">Contact</a>
     </div>
+
+    <i id="burger" class="fa-solid fa-bars"></i>
+
   </nav>
   <!-- Second section with form -->
   <section id="section-2">
@@ -105,6 +116,54 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Aenean euismod bibendum laoreet.</p>
         </div> 
+
+        <div class="container1">
+          <div class="block1"><p>Explore</p></div>
+          <div class="block2"><p>Explore</p></div>
+          <div class="block3"><p>Explore</p></div>
+        </div>
+      </div>
+
+      <!-- Apply -->
+      <div class="test">
+        <div class="content-text">
+          <h3>Tabs with soft transitioning effect.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+            lacus accumsan et viverra justo commodo. Proin sodales
+            pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="block4"><p>Explore</p></div>
+        </div>
+      </div>
+
+      <!-- Receive -->
+      <div class="block5View">
+      <div class="test active1">
+        <div class="content-text">
+          <h3>Explained propriety of out perpetual his you.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+            lacus accumsan et viverra justo commodo. Proin sodales
+            pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+            parturient montes.
+            <br /><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean euismod bibendum laoreet.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="block5"><p>Explore</p></div>
+        </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -239,6 +298,64 @@
 
 
 
+
+
+
+
+<!-- CONTACTS -->
+
+<section id="contacts">
+  <h1>CONTACT US</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <!-- Form -->
+  <form id="contactForm" action="">
+    <input
+      name="fullName"
+      type="text"
+      class="name"
+      placeholder="First name"
+      title="Write your first name"/>
+    <input
+      name="lastName"
+      type="text"
+      class="lastname"
+      placeholder="Last name"
+      title="Write your last name"/>
+    <input
+      name="phoneNumber"
+      type="number"
+      class="phoneNumber"
+      placeholder="Phone number"
+      title="Write your phone number"/>
+    <div class="radioButton">
+      <div class="radio-button">
+        <label for="personal">
+          <input
+            id="personal"
+            type="radio"
+            value="personal"
+            name="message"
+            checked/>
+          <span class="mark">PERSONAL</span>
+        </label>
+      </div>
+      <div class="radio-button">
+        <label for="company">
+          <input
+            id="company"
+            type="radio"
+            value="company"
+            name="message"/>
+          <span class="mark">COMPANY</span>
+        </label>
+      </div>
+    </div>
+    <!-- button -->
+    <button name="contactbutton" class="button" form="contactForm" type="submit">Send</button>
+  </form>
+</section>
+
+
 <!-- FOOTER -->
 <footer>
   <div class="icons_section">
@@ -250,6 +367,10 @@
     </div>
       <p>© 2019 Cheshire County</p>
 </footer>
+
+
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 
   <script src="script.js"></script>
