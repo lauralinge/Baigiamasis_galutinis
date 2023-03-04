@@ -1278,24 +1278,21 @@ a {
 }
 
   #black {
+    .black-right h2{
+      font-size: 1.5em;
+      line-height: 35px;
+      width: 100%;
+    }
     padding: 75px 100px;
     .black-right {
       margin-left: 75px;
     }
-    .black-content {
-      span {
-        margin-top: 10%;
-      }
-    }
+
   }
   #awesome-section {
     padding: 70px;
-    .awesome {
-      .coral-devider {
-        width: 50%;
-      }
     }
-  }
+  
 
   #reviews {
     padding: 0 100px;
@@ -1303,10 +1300,7 @@ a {
       h1 {
         text-align: center;
       }
-      .blue-line {
-        width: 50%;
-        margin-bottom: 30px;
-      }
+    
     }
     .swiper-slide {
       padding: 0;
@@ -1321,5 +1315,13 @@ a {
   //     width: 50%;
   //   }
   // }
+
+
+
+
+
+
+
+
 
 
