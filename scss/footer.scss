@@ -27,7 +27,6 @@ footer {
     }
   a {
     color: $peach;
-    // font-size: 20px;
     &:hover {
       color: $white;
       text-shadow: 0 0 6px $peach;
@@ -39,9 +38,9 @@ footer {
       height: auto;
       width: 70%;
     }
-    // a.icons_section{
-    //   font-size: 0.7em;
-    // }
+    a.icons_section{
+      font-size: 0.7em;
+    }
   }
   }
   

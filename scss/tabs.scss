@@ -96,15 +96,12 @@
         top: 50vh;
         left: 100px;
         opacity: 0;
-        // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
-        //   top 0ms ease-in-out 3000ms;
+
         &.active {
           top: 20px;
           left: 50px;
           text-align: left;
           opacity: 1;
-          // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
-          //   top 0ms ease-in-out 0ms;
         }
         h3 {
           max-width: 4000px;
@@ -121,7 +118,6 @@
         }
       }
     } 
-  
   
     .container1 {
       position: relative;
@@ -170,77 +166,5 @@
         grid-row: 3 / 6;
         grid-column: 1 / 5;
       }
-      
-      
-      
-      
-      
-      
-      
-      
-      .block4 {
-        background-image: url(https://images.unsplash.com/photo-1664465921013-1ee3b2759573?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
-        width: 30%;
-        height: 50%;
-        @include background;
-        grid-row: 1 / 6;
-        grid-column: 1/ 5;
-  
-        
-      }
-  
-      .block5 {
-        background-image: url(https://images.unsplash.com/photo-1677247191557-4abd28b7c387?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
-        @include background;
-        width: 250px;
-        height: 200px;
-        grid-row: 1 / 6;
-        grid-column: 1 / 5;
-        margin-top: 20px;
-  
-      }
-    
     }
-    .block5View {
-      flex-basis: 100%;
-      position: relative;
-      .test {
-        display: flex;
-      }
-      & > div {
-        position: absolute;
-        top: 50vh;
-        left: 100px;
-        opacity: 0;
-        // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
-        //   top 0ms ease-in-out 3000ms;
-        &.active1 {
-          top: 20px;
-          left: 50px;
-          text-align: left;
-          opacity: 1;
-          // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
-          //   top 0ms ease-in-out 0ms;
-        }
-        h3 {
-          max-width: 510px;
-          width: 500px;
-          font-size: 25px;
-          line-height: 40px;
-          margin-top: 20px;
-          margin-bottom: 30px;
-          font-weight: 600;
-        }
-        p {
-          max-width: 1400px;
-          font-size: 15px;
-          line-height: 20px;
-        }
-      }
-        .content-text{
-          width: 100%;
-          margin: auto;
-        }
-  
-  }
-  }
+}

@@ -162,7 +162,7 @@
           }
         }
       }
-      .form-submit1 {
+      button {
         width: 100%;
         padding: 15px;
         font-size: 20px;
@@ -174,7 +174,7 @@
         margin-top: 40px;
         transition: 0.3s;
       }
-      .form-submit1:hover {
+      button:hover {
         cursor: pointer;
         background-color: $peach;
       }
