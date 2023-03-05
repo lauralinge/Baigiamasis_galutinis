@@ -1,0 +1,78 @@
+// FIRST SECTION-NAVIGACIJA
+
+nav {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    top: 0;
+    background: $granite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;  
+    padding: 10px 150px;
+    font-size: 16px;
+    box-shadow: $box-shadow;
+    z-index: 999;
+  
+    img {
+      min-width: 105px;
+      margin-right: 50px;
+    }
+  
+    a {
+      position: relative;
+      color: grey;
+      transition: 0.3s;
+      transition-delay: 0.1s;
+      &:hover {
+        color: $white;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -27px;
+        width: 100%;
+        height: 0;
+        background: $peach;
+        transition: 0.3s;
+        opacity: 1;
+      }
+      &:hover::before {
+        height: 15%;
+      }
+    }
+  
+  
+    .selected {
+      color: rgba($color: $white, $alpha: 1);
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -27px;
+        height: 0%;
+        background: $peach;
+        z-index: -1;
+        transition: 0.3s;
+        height: 15%;
+      }
+    }
+  
+    .rotate {
+      transform: rotate(-90deg);
+    }
+  
+    #burger {
+      color: $peach;
+      cursor: pointer;
+      display: none;
+      transition: 0.3s;
+    }
+  
+  
+    .menu {
+      width: 550px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }

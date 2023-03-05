@@ -1,0 +1,37 @@
+
+// SOCIAL MEDIA
+#social-media {
+    @include flex-spaceBetween-center;
+    @include w-h;
+    background: $white;
+    padding: 0 118px;
+  
+    .media-text {
+      width: 37%;
+      h3 {
+        color: $darkGrey;
+        margin: 20px 0 5px 0;
+      }
+      p {
+        color: $grey;
+        line-height: 20px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        }
+      }
+    .icons_section{
+      height: 100%;
+      width: 40%;
+        .icons{
+        display: flex;
+        height: 100%;
+        text-align: center;
+        justify-content: space-between;
+        }
+        .icon_rss{
+          width: 30px;
+          height: 30px;
+          opacity: 0.7;
+          }
+      }
+    }

@@ -1,0 +1,246 @@
+
+// TABS
+
+#tabs {
+    position: relative;
+    @include flex-center1;
+    background-image: url(../images/christoffer-engstrom-503481-unsplash.png);
+    background-position: center;
+    background-size: cover;
+    padding: 5% 2.5%;
+    @include w-h;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      background: transparent linear-gradient(270deg,#6696e2, #e27866);
+      opacity: 0.42;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    
+    }
+    .tabs {
+      position: relative;
+      top: 200px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+      border-radius: 25px 0 0 25px;
+      overflow: hidden;
+      @include flex-center2;
+    }
+  
+    .tabs .tab-left > div {
+      position: relative;
+      background: $otherPeach;
+      padding: 20px;
+      margin: 20px 0;
+      width: 100px;
+      height: 100px;
+      box-shadow: $box-shadow;
+      border-radius: 3px;
+      cursor: pointer;
+      @include flex-center;
+      font-size: 15px;
+    }
+    .tableft1 p {
+      rotate: -45deg;
+      color: $white;
+      opacity: 0.5;
+    }
+  
+    .tableft1:before {
+      background: $peach;
+      content: "";
+      width: 0px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      transition: 0.5s ease-in-out;
+    }
+    .tableft1:hover::before {
+      width: 100%;
+    }
+  
+    .tableft1.active:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .tableft1.active:hover::before {
+      width: 100%;
+    }
+  
+    .tableft1.active p,
+    .tableft1.active:hover p {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: $white;
+      opacity: 1;
+      letter-spacing: 1px;
+    }
+  
+    .tabs .tab-middle {
+      flex-basis: 90%;
+      position: relative;
+      .tab {
+        display: flex;
+      }
+      & > div {
+        position: absolute;
+        top: 50vh;
+        left: 100px;
+        opacity: 0;
+        // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+        //   top 0ms ease-in-out 3000ms;
+        &.active {
+          top: 20px;
+          left: 50px;
+          text-align: left;
+          opacity: 1;
+          // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+          //   top 0ms ease-in-out 0ms;
+        }
+        h3 {
+          max-width: 4000px;
+          font-size: 25px;
+          line-height: 40px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          font-weight: 600;
+        }
+        p {
+          max-width: 1400px;
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+    } 
+  
+  
+    .container1 {
+      position: relative;
+      display: grid;
+      margin-left: 50px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 20px;
+      width: 60%;
+      height: 380px;
+      & > div {
+        box-shadow: $box-shadow;
+        border-radius: 3px;
+  
+        p {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          display: grid;
+          place-items: center;
+          border-radius: 3px;
+          background-color: rgba($color: $peach, $alpha: 0.8);
+        }
+        &:hover p {
+          font-size: 20px;
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+  
+      .block1 {
+        background-image: url(../images/tabs/photo-1493409137604-0901c55e4456.jpg);
+        @include background;
+        grid-row: 1 / 3;
+        grid-column: 1/ 3;
+      }
+      .block2 {
+        background-image: url(../images/tabs/photo-1543364195-bfe6e4932397.jpg);
+        @include background;
+        grid-row: 1 /3;
+        grid-column: 3 / 5;
+      }
+      .block3 {
+        background-image: url(../images/tabs/photo-1448387473223-5c37445527e7@2x.jpg);
+        @include background;
+        grid-row: 3 / 6;
+        grid-column: 1 / 5;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      .block4 {
+        background-image: url(https://images.unsplash.com/photo-1664465921013-1ee3b2759573?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+        width: 30%;
+        height: 50%;
+        @include background;
+        grid-row: 1 / 6;
+        grid-column: 1/ 5;
+  
+        
+      }
+  
+      .block5 {
+        background-image: url(https://images.unsplash.com/photo-1677247191557-4abd28b7c387?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80);
+        @include background;
+        width: 250px;
+        height: 200px;
+        grid-row: 1 / 6;
+        grid-column: 1 / 5;
+        margin-top: 20px;
+  
+      }
+    
+    }
+    .block5View {
+      flex-basis: 100%;
+      position: relative;
+      .test {
+        display: flex;
+      }
+      & > div {
+        position: absolute;
+        top: 50vh;
+        left: 100px;
+        opacity: 0;
+        // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+        //   top 0ms ease-in-out 3000ms;
+        &.active1 {
+          top: 20px;
+          left: 50px;
+          text-align: left;
+          opacity: 1;
+          // transition: opacity 200ms ease-in-out 0ms, left 800ms ease-in-out 0ms,
+          //   top 0ms ease-in-out 0ms;
+        }
+        h3 {
+          max-width: 510px;
+          width: 500px;
+          font-size: 25px;
+          line-height: 40px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+          font-weight: 600;
+        }
+        p {
+          max-width: 1400px;
+          font-size: 15px;
+          line-height: 20px;
+        }
+      }
+        .content-text{
+          width: 100%;
+          margin: auto;
+        }
+  
+  }
+  }

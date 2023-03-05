@@ -1,0 +1,47 @@
+// FOOTER
+
+footer {
+    @include flex-spaceBetween-center;
+    background: $granite;
+    padding: 40px 150px;
+    .icons_section{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      height: 100%;
+      text-align: center;
+      justify-content: space-between;
+        
+        .icon_rss{
+          width: 20px;
+          height: 20px;
+          opacity: 0.7;
+          }
+      }
+    p {
+      text-align: end;
+      width: 30%;
+      font-size: 20px;
+      color: $white;
+      opacity: 0.5;
+    }
+  a {
+    color: $peach;
+    // font-size: 20px;
+    &:hover {
+      color: $white;
+      text-shadow: 0 0 6px $peach;
+      transition: 0.3s;
+      transform: scale(1.4);
+      
+    }
+    img{
+      height: auto;
+      width: 70%;
+    }
+    // a.icons_section{
+    //   font-size: 0.7em;
+    // }
+  }
+  }
+  

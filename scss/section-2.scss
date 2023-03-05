@@ -1,0 +1,177 @@
+#section-2 {
+    background-image: url(../images/photo-1480714378408-67cf0d13bc1b.png);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    padding: 118px;
+  
+    &::before {
+      content: "";
+      background: transparent linear-gradient(270deg,#1c1c1c);
+      opacity: 0.63;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .box-2 {
+      position: relative;
+      img {
+        width: 250px;
+        height: 110px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 36px;
+        line-height: 40px;
+        width: 70%;
+        font-weight: 600;
+      }
+      .text {
+        border: 1px solid $white;
+        width: 85px;
+        background: $white;
+        margin: 30px 0;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        color: $white;
+        opacity: 0.8;
+        font-weight: 500;
+      }
+  
+      button {
+        width: 135px;
+        height: 42px;
+        margin-top: 40px;
+        background: transparent;
+        border: 2px solid $white;
+        color: $white;
+        transition: 0.3s;
+        &:hover {
+          color: $peach;
+          border: 3px solid $peach;
+          cursor: pointer;
+        }
+      }
+    }
+    .container {
+      position: relative;
+      background-color: $white;
+      max-width: 360px;
+      width: 100%;
+      @include flex-center1;
+      flex-direction: column;
+      border-radius: 5px;
+      margin-left: 100px;
+      color: $granite;
+  
+      h3 {
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+        font-size: 20px;
+        background: $white;
+        color: $darkGrey;
+        border-radius: 5px 5px 0 0;
+  
+        span {
+          color: $peach;
+        }
+      }
+      p {
+        width: 100%;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        font-weight: 700;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        max-width: 360px;
+        padding: 0 50px;
+        @include w-h;
+  
+        input {
+          outline: none;
+          border: none;
+          border-bottom: 1px solid $grey;
+          padding-bottom: 5px;
+          margin-top: 30px;
+          font-size: 15px;
+          &::-webkit-input-placeholder {
+            padding-left: 10px;
+            color: $lightGrey;
+          }
+        }
+  
+        .radio-button1 {
+          display: flex;
+          gap: 70px;
+  
+          .form-radio-button1 {
+            display: flex;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $green;
+            border-radius: 100%;
+            position: relative;
+            transition: 0.5s;
+  
+            label {
+              display: flex;
+              color: $black;
+              opacity: 1;
+              font-size: 10px;
+              font-weight: 600;
+              margin-left: 5px;
+              transition: color 0.5s;
+  
+              input::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                transform: scale(0);
+                background: $green;
+                border-radius: 100%;
+                transition: 0.5s;
+              }
+              input:checked:before {
+                transform: scale(0.6);
+              }
+             
+            }
+          }
+        }
+      }
+      .form-submit1 {
+        width: 100%;
+        padding: 15px;
+        font-size: 20px;
+        border: 1px solid transparent;
+        background-image: none;
+        background-color: $green;
+        color: $white;
+        border-radius: 0 0 5px 5px;
+        margin-top: 40px;
+        transition: 0.3s;
+      }
+      .form-submit1:hover {
+        cursor: pointer;
+        background-color: $peach;
+      }
+    }
+  }

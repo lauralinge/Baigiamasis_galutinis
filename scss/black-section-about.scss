@@ -1,0 +1,55 @@
+// BLACK SECTION
+
+#black {
+    @include flex-spaceBetween-center;
+    color: $white;
+    background: $granite;
+    @include w-h;
+    padding: 100px 150px;
+    .logo {
+      min-width: 45%;
+    }
+    img.logo{
+      width: 80% !important;
+      height: 200px !important;
+    }
+    .black-right {
+      margin-left: 150px;
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 70%;
+      }
+      img {
+        margin: 30px 0;
+        width: 200px;
+      }
+      p {
+        line-height: 21px;
+        margin-bottom: 42px;
+        font-size: 16px;
+        font-weight: normal;
+  
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+      .black-content {
+        display: flex;
+        span {
+          @include flex-center;
+          width: 50px;
+          height: 50px;
+          padding: 16px;
+          border-radius: 50%;
+          margin-right: 27px;
+          background: $peach;
+        }
+  }
+        .fa-eye,
+        .fa-comment {
+          font-size: 22px;
+          color: $white;
+        }
+      }
+    }

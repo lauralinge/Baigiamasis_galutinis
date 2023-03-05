@@ -1,0 +1,60 @@
+// AWESOME
+
+#awesome-section {
+    @include w-h;
+    background: $white;
+    color: $blackGrey;
+    padding: 100px 150px;
+    .awesome {
+      @include flex-center1;
+      flex-direction: column;
+      h2 {
+        font-size: 36px;
+        line-height: 40px;
+      }
+      .coral-devider {
+        width: 65px;
+        border: 1.5px solid $peach;
+        background: $peach;
+        margin: 24px 0;
+      }
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        color: $grey;
+      }
+    }
+    .bottom {
+      @include flex-center;
+      text-align: center;
+      margin-top: 65px;
+      gap: 120px;
+      & > div {
+        align-self: flex-start;
+      }
+      i {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 100%;
+        border: 1px solid $peach;
+        color: $peach;
+        text-align: center;
+        padding: 14px 0;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 34px 0;
+        color: $darkGrey;
+        font-weight: normal;
+      }
+      p {
+        max-width: 290px;
+        width: 100%;
+        color: $grey;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
