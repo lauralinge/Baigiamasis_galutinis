@@ -223,16 +223,257 @@
         }
       }
     }
-    // footer {
-    //   padding: 20px 100px;
-    //   p {
-    //     width: 50%;
-    //   }
-    // }
+
   
   
   
   
+  
+  @media (max-width: 820px) {
+
+    #section-2 {
+      padding: 100px 50px;
+      flex-direction: column;
+  
+      .box-2 {
+        text-align: center;
+        h1 {
+          width: 100%;
+        }
+        p {
+          text-align: justify;
+        }
+        .text {
+          width: 100%;
+          margin: 30px auto;
+        }
+        button {
+          width: 100%;
+          margin: 20px 0;
+        }
+      }
+      .container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 50px;
+        p {
+          padding-bottom: 0;
+        }
+        form {
+          max-width: 100%;
+          .radio-button1 {
+            margin-top: 30px;
+            gap: 100px;
+          }
+        }
+      }
+    }
+
+
+
+    #tabs {
+      .tabs .tab-left > div {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 35px 0px 15px 0px;
+        width: 33.333%;
+        gap: 20px !important;
+      }
+  
+      .tabs {
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+        top: 350px;
+       
+  
+        .tab-left {
+          margin-left: 0px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          justify-content: space-between;
+        }
+  
+        .tab-midddle {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          right: 12%;
+  
+          .tab {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            .tab-text {
+              padding: 0px;
+              display: flex;
+              flex-flow: row wrap;
+            }
+            .container1 {
+              display: inline-flex;
+              margin-top: 50px;
+              margin-left: 0;
+              height: 150px;
+              .block4 {
+                height: 350px;
+              }
+              div {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+      #black {
+        padding: 50px;
+        display: block;
+        text-align: center;
+    
+        .logo {
+          width: 50%;
+          margin-bottom: 50px;
+        }
+        .black-right {
+          margin: 0;
+          h2 {
+            width: 100%;
+          }
+          p {
+            text-align: justify;
+          }
+          h5 {
+            text-align: left;
+          }
+        }
+        .black-content {
+          span {
+            margin-top: 5%;
+          }
+        }
+      }
+    
+    #awesome-section {
+      padding: 100px 50px;
+  
+      .awesome {
+        h2 {
+          width: 100%;
+          text-align: center;
+          font-size: 1.6em;
+        }
+        .coral-devider {
+          width: 100%;
+        }
+        p {
+          text-align: justify;
+        }
+      }
+      .bottom {
+        display: block;
+        margin-top: 20px;
+        h3 {
+          margin: 30px 0;
+        }
+        p {
+          max-width: 100%;
+          text-align: center;
+        }
+        i {
+          margin-top: 20px;
+        }
+      }
+    }
+
+
+
+
+    #reviews {
+      padding: 0 50px;
+      .reviews-header {
+        h1 {
+          text-align: center;
+        }
+        .blue-line {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+      }
+      .swiper-slide {
+        padding: 0;
+        .reviews {
+          max-width: 200px;
+        }
+      }
+    }
+    #contacts {
+      padding: 0 35px 35px 35px;
+  
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    footer {
+      padding: 20px 50px;
+      display: block;
+  
+      .icons_section {
+        padding: 0 50px;
+        width: 100%;
+      }
+      p {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  
+
+  @media (max-width: 768px){
+    #social-media{
+      flex-direction: column;
+      height: 100%;
+      margin: 0px 0px 0px;
+      .media-text{
+        width: 95%;
+        // margin-top: 10px;
+        // margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+  
+        h3{
+          
+          font-size: 1.4em;
+          text-align: center;
+          margin-bottom: 10px;
+   
+  
+        }
+        p{
+          font-size: 0.9em;
+          text-align: center;
+          width: 100%;
+          margin: 0px 20px 20px 0px;
+         
+        }
+      }
+      .icons{
+        display: flex;
+        width: 100%;
+        justify-content: space-around ;
+        // padding-top: 20px;
+        padding-bottom: 20px;
+        
+      }
+    }
+}
   
   
   
