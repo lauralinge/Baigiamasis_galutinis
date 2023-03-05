@@ -42,8 +42,7 @@ nav {
         height: 15%;
       }
     }
-  
-  
+ 
     .selected {
       color: rgba($color: $white, $alpha: 1);
       &::before {
@@ -57,7 +56,6 @@ nav {
         height: 15%;
       }
     }
-  
     .rotate {
       transform: rotate(-90deg);
     }

@@ -1,48 +1,73 @@
-// PRICING
 
 #pricing{
     background: $blue;
     width: 100%;
     height: auto;
     max-width: 100%;
-    // padding: 0 150px;
-      .swiper-slide {
-        align-self: flex-end;
-      }
-      .pricing-options {
-        @include flex-center;
-        flex-direction: column;
-        padding-top: 90px;
-        h2 {
-          color: $white;
-          font-weight: normal;
-          font-size: 2rem;
-  
-        }
-        .green-divider {
-          width: 65px;
-          border: 1px solid $green;
-          margin: 25px 0;
-        }
-        p{
-          color: $white;
-          font-size: 0.9rem;
-        }
+    padding: 0 80px;
+
+    .swiper{
+      width: 100%;
+      height: 100%;
+      height: 640px !important;      
     }
-    .pricing-container{
+    .swiper-slide{
+        gap: 50px;
+        height: 100%;
+        @include flex-center;
+        background: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .swiper-wrapper{
       @include flex-center1;
-    
-    .block {
-      min-width: 25%;
-      border-radius: 7px;
-      margin: 70px auto 120px;
+    }
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 3px solid $green;
+    transition: 0.3s;
+  }
+  .swiper-pagination-bullet-active {
+    transform: scale(1.3);
+  }     
+    .pricing-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+        padding-top: 90px;
+        p{
+            color: $white;
+            font-size: 0.9rem;
+            padding: 10px;
+            }
+      h2 {
+        font-size: 31px;
+        font-weight: normal;
+        color: $white;
+        }
+        .green-devider {
+        width: 65px;
+        border: 1px solid $green;
+        margin: 25px 0;
+        }
+ 
+    }
+    .plan {
+      max-width: 420px;
+      min-width: 280px;
+      margin: 70px auto 100px;
+      border-radius: 5px;
       overflow: hidden;
       transition: 0.3s;
       gap: 10px;
       &:hover{
         transform: scale(1.1);
-      }
-      .block-pricing-options {
+      }      
+      .plan-header {
         background: $darkGrey;
         color: $white;
         padding: 15px 0 20px 0;
@@ -52,32 +77,33 @@
           font-weight: normal;
         }
         .price {
+          font-size: 90px;
           margin: 15px 0;
-          font-size: 80px;
           font-weight: normal;
           text-align: center;
           span {
+            font-size: 36px;
             margin-right: 5px;
-            font-size: 40px;
           }
         }
-        p{
-          font-size: 14px;
-          opacity: 0.7;
-          text-align: center;
+        p {
           color: $white;
-  
+          opacity: 0.5;
+          font-size: 15px;
+          text-align: center;
         }
       }
+  
       .green {
         background: $green;
         border: 5px solid $green;
         color: $white;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
       }
       ul {
         text-align: center;
+        
         li {
           background: $white;
           color: $grey;
@@ -86,5 +112,4 @@
         }
       }
     }
-  }
   }

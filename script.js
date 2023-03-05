@@ -1,4 +1,4 @@
-// Tabs
+// TABS
 
 let tabHeaders = document.querySelectorAll(".tabs .tab-left > div");
 let tabContents = document.querySelectorAll(".tabs .tab-middle > div");
@@ -50,7 +50,7 @@ for (let i = 0; i < tabHeaders.length; i++) {
   });
 
 
-  // Swiper
+  // SWIPER
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -65,13 +65,8 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   breakpoints: {
-    600: {
+    1000: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       allowSlidePrev: true,
